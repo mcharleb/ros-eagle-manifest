@@ -6,13 +6,13 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
-  <default remote="atlflight" revision="default"/>
+  <default remote="atlflight" revision="master"/>
   <!-- List all the repositories you want to fetch -->
   <!-- "name": git repository's name on hosting server
        "remote": the remote host from above (if not the default)
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
-  <project name="meta-ros-eagle" path="poky/meta-ros-eagle" revision="master"/>
+  <project name="meta-ros-eagle" path="poky/meta-ros-eagle"/>
   <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revsion="jethro"/>
   <project name="meta-ros" path="poky/meta-ros" remote="bmwcarit" revision="master"/>
   <project name="poky" remote="yocto" revision="jethro"/>
